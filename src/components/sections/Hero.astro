@@ -1,7 +1,8 @@
 ---
-import Button from "../shared/Button.astro";
+import BtnLink from "../shared/BtnLink.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
+import WhatsAppSvg from "../shared/WhatsAppSvg.astro";
 import ByNumber from "./ByNumber.astro";
 
 ---
@@ -16,29 +17,20 @@ import ByNumber from "./ByNumber.astro";
         <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
             <h1 class="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight
              font-bold text-heading-1">
-                Uma
+                Uma 
                 <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
-                    Academia
+                Academia
                 </span>
-                Perto De 
+                No Centro de
                 <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
-                Você.
+                Curitiba.
                 </span>
             </h1>
             <Paragraph className="mt-8">
-                Uma academia completa no centro de curitiba. Treinos de hipertrofia, cardiovascular, definição, força, funcional, resistência muscular e terapêutico. Escolha também aulas de Zumba, Pilates, Bike.
+                Localizada no Largo da Ordem, na Rua São Francisco 308, o MasterDyn é uma academia studio completa no centro de curitiba. Treinos <strong>Personalizados</strong> cardiovascular, definição, força, funcional, resistência muscular e terapêutico. Escolha também aulas de Zumba, Pilates, Bike.
             </Paragraph>
-            <div class="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
-                <Button variant={"primary"} className={"min-w-max text-white"}>
-                    <span class="hidden sm:flex relative z-[5]">
-                        Quero entrar em forma
-                    </span>
-                    <span class="flex sm:hidden relative z-[5]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-                        </svg>                                      
-                    </span>
-                </Button>
+            <div class="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
+                <BtnLink text="Quero entrar em forma" href="https://wa.me/4192225223" className="flex justify-center w-full sm:w-max" variant="primary"/>
             </div>
         </div>
         <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">

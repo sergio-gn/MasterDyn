@@ -3,80 +3,80 @@ import GroupFooterNav from "../blocks/GroupFooterNav.astro";
 import Container from "../shared/Container.astro";
 import FooterNav from "../shared/FooterNav.astro";
 import Paragraph from "../shared/Paragraph.astro";
-const footerNav1 = [
-    {
-        itemText:"Marketing",
-        itemLink:"#"
-    },
-    {
-        itemText:"Analylitics",
-        itemLink:"#"
-    },
-    {
-        itemText:"Commerce",
-        itemLink:"#"
-    },
-    {
-        itemText:"Insights",
-        itemLink:"#"
-    }
-]
+// const footerNav1 = [
+//     {
+//         itemText:"Marketing",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"Analylitics",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"Commerce",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"Insights",
+//         itemLink:"#"
+//     }
+// ]
 
-const footerSupport = [
-    {
-        itemText:"Pricing",
-        itemLink:"#"
-    },
-    {
-        itemText:"Guides",
-        itemLink:"#"
-    },
-    {
-        itemText:"FAQ",
-        itemLink:"#"
-    },
-    {
-        itemText:"Contact",
-        itemLink:"#"
-    }
-]
+// const footerSupport = [
+//     {
+//         itemText:"Pricing",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"Guides",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"FAQ",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"Contact",
+//         itemLink:"#"
+//     }
+// ]
 
-const footerCompany = [
-    {
-        itemText:"About",
-        itemLink:"/about"
-    },
-    {
-        itemText:"Blog",
-        itemLink:"#"
-    },
-    {
-        itemText:"Jobs",
-        itemLink:"#"
-    },
-    {
-        itemText:"Parteners",
-        itemLink:"#"
-    },
-    {
-        itemText:"Jobs",
-        itemLink:"#"
-    }
-]
-const footerLegal = [
-    {
-        itemText:"Claim",
-        itemLink:"/#"
-    },
-    {
-        itemText:"Privacy",
-        itemLink:"#"
-    },
-    {
-        itemText:"Terms",
-        itemLink:"#"
-    }
-]
+// const footerCompany = [
+//     {
+//         itemText:"About",
+//         itemLink:"/about"
+//     },
+//     {
+//         itemText:"Blog",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"Jobs",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"Parteners",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"Jobs",
+//         itemLink:"#"
+//     }
+// ]
+// const footerLegal = [
+//     {
+//         itemText:"Claim",
+//         itemLink:"/#"
+//     },
+//     {
+//         itemText:"Privacy",
+//         itemLink:"#"
+//     },
+//     {
+//         itemText:"Terms",
+//         itemLink:"#"
+//     }
+// ]
 ---
 <div class="mt-16"></div>
 <footer class="relative  bg-gradient-to-tr from-gray-100 to-gray-200 dark:from-gray-900 pt-28 rounded-t-3xl">
@@ -108,24 +108,17 @@ const footerLegal = [
           </div>
       </div>
     <Container className="pb-8 relative overflow-hidden">
-        
         <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 blur-2xl opacity-20 w-24 h-16 sm:w-48 sm:h-36 rounded-full rotate-12 skew-x-6 bg-primary"></span>
         <div class="grid grid-cols-2 lg:grid-cols-3 lg:items-stretch gap-8 relative">
             <div class="col-span-2 lg:col-span-1 h-auto flex flex-col">
                 <div class="h-full">
-                    <a href="#" class="relative flex items-center gap-3">
-                        <div class="relative w-7 h-7 overflow-hidden flex rounded-xl">
-                            <span class="absolute w-4 h-4 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
-                            <span class="absolute w-4 h-4 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
-                            <span class="absolute w-4 h-4 -bottom-1 -left-1 bg-primary rounded-md rotate-45"></span>
-                            <span class="absolute w-2 h-2 rounded-full bg-heading-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
-                        </div>
-                        <div class="inline-flex text-lg font-semibold text-heading-1">
-                            Master Dyn
-                        </div>
-                    </a>
+                    <div class="min-w-max inline-flex relative">
+                        <a href="/" class="relative flex items-center gap-3">
+                            <img src="/images/masterdyn.webp" alt="Hero image" width="132" height="83" >
+                        </a>
+                    </div>        
                     <Paragraph className={"mt-8"}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, maiores nam doloribus id magni
+                        A sua Academia Studio no Centro de Curitiba.
                     </Paragraph>
                 </div>
 
@@ -160,7 +153,7 @@ const footerLegal = [
                     </a>
                 </div>
             </div>
-
+<!-- 
             <GroupFooterNav>
                 <FooterNav title={"Company"} navItems={footerCompany}/>
                 <FooterNav title={"Solutions"} navItems={footerNav1}/>
@@ -169,7 +162,7 @@ const footerLegal = [
             <GroupFooterNav>
                 <FooterNav title={"Support"} navItems={footerSupport}/>
                 <FooterNav title={"Ressources"} navItems={footerLegal}/>
-            </GroupFooterNav>
+            </GroupFooterNav> -->
 
         </div>
     </Container>
@@ -177,10 +170,7 @@ const footerLegal = [
         <Container>
             <div class="flex justify-between items-center gap-6 md:text-lg text-heading-3">
                 <div>
-                    &copy; <span id="year"></span> Master Dyn. All right reserved
-                </div>
-                <div>
-                    Proudly made by <a href="https://github.com/johnkat-mj" target="_blank" class="font-semibold">John Kat</a>
+                    &copy; <span id="year">2024</span> ©MasterDyn. Todos os Direitos Reservados
                 </div>
             </div>
         </Container>
