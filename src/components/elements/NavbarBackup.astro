@@ -3,7 +3,32 @@ import BtnLink from "../shared/BtnLink.astro";
 import Container from "../shared/Container.astro";
 import  Navitem from "../shared/Navitem.astro";
 
-const navItems = [];
+const navItems = [
+    {
+        text: "Home",
+        href: "/",
+        isActive: true,
+        isExternal: false
+    },
+    {
+        text: "Sobre",
+        href: "/sobre",
+        isActive: false,
+        isExternal: false
+    },
+    {
+        text: "Contato",
+        href: "/contato",
+        isActive: false,
+        isExternal: false
+    },
+    {
+        text: "WhatsApp",
+        href: "https://wa.me/4192225223",
+        isActive: false,
+        isExternal: true
+    }
+];
 ---
 
 <header class="absolute inset-x-0 top-0 z-50 py-6">
